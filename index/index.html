@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MonthlyReport</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="whole-conteiner">
+        <div id="heather-menu">
+            <p>heather and posible menu</p>
+        </div>
+        <hr>
+        <div id="content">
+            <div id="title1">
+                <h1>Platform capacity report</h1>
+            </div>
+        
+            <div id="Plat-CPUMEM-Usage">
+                <h2>Platform core CPU and memory data</h2>
+                <table>
+                    <caption>Average CPU and memory in platform for the last month</caption>
+                    <thead>
+                        <th class="resource data-center" id="CPU" scope="col">Data</th>
+                        <th class="data-center" id="RTP" scope="col">RTP</th>
+                        <th class="data-center" id="SJC" scope="col">SJC</th>
+                        <th class="data-center" id="LON" scope="col">LON</th>
+                        <th class="data-center" id="SNG" scope="col">SNG</th>
+                        <th class="data-center" id="SYD" scope="col">SYD</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td scope="row" class="data-1">memory</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td scope="row" class="data-2">CPU</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div id="Plat-DMZ-Usage">
+                <h2>Platform DMZ data</h2>
+                <div id="DMZ-container">
+                    <div id="CPU-lab-Gw-firewall" class="flex-display">
+                        <div id="Lab-GW-CPU" >
+                            <table>
+                                <caption>Average Lab GW cpu for the last month</caption>
+                                <thead>
+                                    <th class="resource data-center" id="CPU" scope="col">Data</th>
+                                    <th class="data-center" id="RTP" scope="col">RTP</th>
+                                    <th class="data-center" id="SJC" scope="col">SJC</th>
+                                    <th class="data-center" id="LON" scope="col">LON</th>
+                                    <th class="data-center" id="SNG" scope="col">SNG</th>
+                                    <th class="data-center" id="SYD" scope="col">SYD</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td scope="row" class="DMZ-row">percentage</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>4</td>
+                                        <td>6</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="firewall-CPU">
+                            <table>
+                                <caption>Average Firewall CPU for the last month</caption>
+                                <thead>
+                                    <th class="resource data-center" id="CPU" scope="col">Data</th>
+                                    <th class="data-center" id="RTP" scope="col">RTP</th>
+                                    <th class="data-center" id="SJC" scope="col">SJC</th>
+                                    <th class="data-center" id="LON" scope="col">LON</th>
+                                    <th class="data-center" id="SNG" scope="col">SNG</th>
+                                    <th class="data-center" id="SYD" scope="col">SYD</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td scope="row" class="DMZ-row">percentage</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>4</td>
+                                        <td>6</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div id="Traffic-It-asa" class="flex-display">
+                        <div id="traffic-IT">
+                            <table>
+                                <caption>Average traffic to Cisco IT for the last month</caption>
+                                <thead>
+                                    <th class="resource data-center" id="CPU" scope="col">Data</th>
+                                    <th class="data-center" id="RTP" scope="col">RTP</th>
+                                    <th class="data-center" id="SJC" scope="col">SJC</th>
+                                    <th class="data-center" id="LON" scope="col">LON</th>
+                                    <th class="data-center" id="SNG" scope="col">SNG</th>
+                                    <th class="data-center" id="SYD" scope="col">SYD</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td scope="row" class="DMZ-row">Inside</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>4</td>
+                                        <td>6</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row" class="DMZ-row">outside</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>4</td>
+                                        <td>6</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="Traffic-asa">
+                            <table>
+                                <caption>Average traffic to NGFW for the last month</caption>
+                                <thead>
+                                    <th class="resource data-center" id="CPU" scope="col">Data</th>
+                                    <th class="data-center" id="RTP" scope="col">RTP</th>
+                                    <th class="data-center" id="SJC" scope="col">SJC</th>
+                                    <th class="data-center" id="LON" scope="col">LON</th>
+                                    <th class="data-center" id="SNG" scope="col">SNG</th>
+                                    <th class="data-center" id="SYD" scope="col">SYD</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td scope="row" class="DMZ-row">Inside</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>4</td>
+                                        <td>6</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row" class="DMZ-row">outside</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>4</td>
+                                        <td>6</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Plat-Storage-Usage">
+                <h2>Platform Storage data</h2>
+                <div id="Storage-CPU">
+                    <table>
+                        <caption>MAX CPU for the last month</caption>
+                        <thead>
+                            <th class="resource data-center" id="CPU" scope="col">Data</th>
+                            <th class="data-center" id="RTP" scope="col">RTP</th>
+                            <th class="data-center" id="SJC" scope="col">SJC</th>
+                            <th class="data-center" id="LON" scope="col">LON</th>
+                            <th class="data-center" id="SNG" scope="col">SNG</th>
+                            <th class="data-center" id="SYD" scope="col">SYD</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row" class="data-1 pair">DC-na-vpod-01</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td scope="row" class="data-2 pair">DC-na-vpod-02</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td scope="row" class="data-3">DC-na-vpod-03</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td scope="row" class="data-4">DC-na-vpod-04</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td scope="row" class="data-5">DC-na-vpod-05</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td scope="row" class="data-6">DC-na-vpod-06</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td scope="row" class="data-7">DC-na-vpod-07</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td scope="row" class="data-8">DC-na-vpod-08</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td scope="row" class="data-9">DC-na-vpod-09</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td scope="row" class="data-10">DC-na-vpod-10</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>6</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="Storage-Node-Agg-container" class="flex-display">
+                    <div id="Storage-Node-Headroom" >
+                        <table>
+                            <caption>MAX Node Hearoom last month</caption>
+                            <thead>
+                                <th class="resource data-center" id="CPU" scope="col">Data</th>
+                                <th class="data-center" id="RTP" scope="col">RTP</th>
+                                <th class="data-center" id="SJC" scope="col">SJC</th>
+                                <th class="data-center" id="LON" scope="col">LON</th>
+                                <th class="data-center" id="SNG" scope="col">SNG</th>
+                                <th class="data-center" id="SYD" scope="col">SYD</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row" class="data-1 pair">DC-na-vpod-01</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row" class="data-2 pair">DC-na-vpod-02</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row" class="data-3">DC-na-vpod-03</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row" class="data-4">DC-na-vpod-04</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row" class="data-5">DC-na-vpod-05</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row" class="data-6">DC-na-vpod-06</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row" class="data-7">DC-na-vpod-07</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row" class="data-8">DC-na-vpod-08</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row" class="data-9">DC-na-vpod-09</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row" class="data-10">DC-na-vpod-10</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>6</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id ="Storage-Agg-usage">
+                        <table>
+                            <caption>MAX Aggregate last month</caption>
+                            <thead>
+                                <th class="resource data-center" id="CPU" scope="col">Data</th>
+                                <th class="data-center" id="RTP" scope="col">RTP</th>
+                                <th class="data-center" id="SJC" scope="col">SJC</th>
+                                <th class="data-center" id="LON" scope="col">LON</th>
+                                <th class="data-center" id="SNG" scope="col">SNG</th>
+                                <th class="data-center" id="SYD" scope="col">SYD</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row" class="data-1 pair">DC-na-vpod-01</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row" class="data-2 pair">DC-na-vpod-02</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row" class="data-3">DC-na-vpod-03</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row" class="data-4">DC-na-vpod-04</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row" class="data-5">DC-na-vpod-05</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row" class="data-6">DC-na-vpod-06</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row" class="data-7">DC-na-vpod-07</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row" class="data-8">DC-na-vpod-08</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row" class="data-9">DC-na-vpod-09</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row" class="data-10">DC-na-vpod-10</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>6</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div id="Plat-VMs-Usage">
+                <h2>Platform Main VMs data</h2>
+                <div id="Plat-VMs-Conteiner" class="flex-display">
+                    <div id="VMs-CPU">
+                        <table>
+                            <caption>Max CPU usage for important VMs</caption>
+                            <thead>
+                                <th class="resource data-center" id="CPU" scope="col">Data</th>
+                                <th class="data-center" id="RTP" scope="col">RTP</th>
+                                <th class="data-center" id="SJC" scope="col">SJC</th>
+                                <th class="data-center" id="LON" scope="col">LON</th>
+                                <th class="data-center" id="SNG" scope="col">SNG</th>
+                                <th class="data-center" id="SYD" scope="col">SYD</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row" class="VM-1">ACS</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row" class="VM-2">Active Directory</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row" class="VM-3">Platrform VCSA</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row" class="VM-4">Core common controller</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row" class="VM-5">Transfer VM (XFR)</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>6</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="VMs-Memory">
+                        <table>
+                            <caption>Max Memory usage for important VMs</caption>
+                            <thead>
+                                <th class="resource data-center" id="CPU" scope="col">Data</th>
+                                <th class="data-center" id="RTP" scope="col">RTP</th>
+                                <th class="data-center" id="SJC" scope="col">SJC</th>
+                                <th class="data-center" id="LON" scope="col">LON</th>
+                                <th class="data-center" id="SNG" scope="col">SNG</th>
+                                <th class="data-center" id="SYD" scope="col">SYD</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row" class="VM-1">ACS</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row" class="VM-2">Active Directory</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row" class="VM-3">Platrform VCSA</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row" class="VM-4">Core common controller</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row" class="VM-5">Transfer VM (XFR)</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>6</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div id="Plat-ExternalIP-Usage">
+                <h2>Platform External IPs data</h2>
+                <div id="container">
+                    <table>
+                        <caption>Max Public IP utilization percentage For last month</caption>
+                        <thead>
+                            <th class="resource data-center" id="CPU" scope="col">Data</th>
+                            <th class="data-center" id="RTP" scope="col">RTP</th>
+                            <th class="data-center" id="SJC" scope="col">SJC</th>
+                            <th class="data-center" id="LON" scope="col">LON</th>
+                            <th class="data-center" id="SNG" scope="col">SNG</th>
+                            <th class="data-center" id="SYD" scope="col">SYD</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row" class="Ip-available">Available</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td scope="row" class="Ip-available-used">Max Used</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td scope="row" class="Ip-percentage">Percentage</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>6</td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+        
+                </div>
+            </div>
+            <div id="Plat-ContentPool-Usage">
+                <h2>Platform content pool data</h2>
+                <div id="container">
+                    <div id="rtp-content-pool" class="flex-display">
+                        <table>
+                            <caption>RTP Block 6 MAX CPU and memory</caption>
+                            <thead>
+                                <th class="resource data-center" id="CPU" scope="col">Data</th>
+                                <th class="data-center" id="Content-pool-Max" scope="col">Maximun</th>
+                                <th class="data-center" id="Content-pool-available" scope="col">Available</th>
+                                <th class="data-center" id="Content-pool-percentage" scope="col">Percentage</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row" class="Content-pool-CPU ">CPU</td>
+                                    <td >1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row" class="Content-pool-Memory ">Memory</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                
+                                
+                                
+                            </tbody>
+                        </table>
+                        <table>
+                            <caption>RTP Block 9 MAX CPU and memory</caption>
+                            <thead>
+                                <th class="resource data-center" id="CPU" scope="col">Data</th>
+                                <th class="data-center" id="Content-pool-Max" scope="col">Maximun</th>
+                                <th class="data-center" id="Content-pool-available" scope="col">Available</th>
+                                <th class="data-center" id="Content-pool-percentage" scope="col">Percentage</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row" class="Content-pool-CPU">CPU</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row" class="Content-pool-Memory">Memory</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                
+                                
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="sjc-lon-content-pool" class="flex-display">
+                        <table>
+                            <caption>SJC Block 7 MAX CPU and memory</caption>
+                            <thead>
+                                <th class="resource data-center" id="CPU" scope="col">Data</th>
+                                <th class="data-center" id="Content-pool-Max" scope="col">Maximun</th>
+                                <th class="data-center" id="Content-pool-available" scope="col">Available</th>
+                                <th class="data-center" id="Content-pool-percentage" scope="col">Percentage</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row" class="Content-pool-CPU">CPU</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row" class="Content-pool-Memory">Memory</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                
+                                
+                                
+                            </tbody>
+                        </table>
+                        <table>
+                            <caption>LON Block 7 MAX CPU and memory</caption>
+                            <thead>
+                                <th class="resource data-center" id="CPU" scope="col">Data</th>
+                                <th class="data-center" id="Content-pool-Max" scope="col">Maximun</th>
+                                <th class="data-center" id="Content-pool-available" scope="col">Available</th>
+                                <th class="data-center" id="Content-pool-percentage" scope="col">Percentage</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row" class="Content-pool-CPU">CPU</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row" class="Content-pool-Memory">Memory</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                
+                                
+                                
+                            </tbody>
+                        </table>
+                        
+                    </div>
+                    <div id="sng-content-pool" class="flex-display">
+                        <table>
+                            <caption>SNG Block 7 MAX CPU and memory</caption>
+                            <thead>
+                                <th class="resource data-center" id="CPU" scope="col">Data</th>
+                                <th class="data-center" id="Content-pool-Max" scope="col">Maximun</th>
+                                <th class="data-center" id="Content-pool-available" scope="col">Available</th>
+                                <th class="data-center" id="Content-pool-percentage" scope="col">Percentage</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row" class="Content-pool-CPU">CPU</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row" class="Content-pool-Memory">Memory</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                
+                                
+                                
+                            </tbody>
+                        </table>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <div id="Plat-outages">
+                <h2>Platform Monthly outages data</h2>
+                <table>
+                    <caption>Average CPU and memory in platform for the last month</caption>
+                    <thead>
+                        <th class="resource data-center" id="CPU" scope="col">Date</th>
+                        <th class="data-center" id="RTP" scope="col">Planned</th>
+                        <th class="data-center" id="SJC" scope="col">Not Planned</th>
+                        <th class="data-center" id="LON" scope="col">Root Cause</th>
+                        <th class="data-center" id="SNG" scope="col">Solution</th>
+                        <th class="data-center" id="SYD" scope="col">Duration</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td scope="row" class="data-1">Outage1</td>
+                            <td>x</td>
+                            <td></td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td scope="row" class="data-2">Outage2</td>
+                            <td></td>
+                            <td>x</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+</html>
