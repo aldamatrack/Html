@@ -8,8 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    
 </head>
 <body>
+    <script src="popup.js"></script>
     <div id="whole-conteiner">
         <div id="heather-menu">
             <p>heather and posible menu</p>
@@ -26,16 +28,25 @@
                     <caption>Average CPU and memory in platform for the last month</caption>
                     <thead>
                         <th class="resource data-center" id="CPU" scope="col">Data</th>
-                        <th class="data-center" id="RTP" scope="col">RTP</th>
-                        <th class="data-center" id="SJC" scope="col">SJC</th>
-                        <th class="data-center" id="LON" scope="col">LON</th>
-                        <th class="data-center" id="SNG" scope="col">SNG</th>
-                        <th class="data-center" id="SYD" scope="col">SYD</th>
+                        <th class="data-center hover-element" id="RTPCPU" scope="col">RTP
+                            <div class="image-popup">
+                                <img src="img/CoreCPUMem/CPU/RTP/img.webp" alt="RTP CPU">
+                            </div>
+                        </th>
+                        <th class="data-center" id="SJCCPU" scope="col">SJC</th>
+                        <th class="data-center" id="LONCPU" scope="col">LON</th>
+                        <th class="data-center" id="SNGCPU" scope="col">SNG</th>
+                        <th class="data-center hover-element" id="SYDCPU" scope="col">SYD
+                            <div class="image-popup">
+                                <img src="img/CoreCPUMem/CPU/SYD/img.avif" alt="RTP CPU">
+                            </div>
+                        </th>
+                        
                     </thead>
                     <tbody>
                         <tr>
                             <td scope="row" class="data-1">memory</td>
-                            <td>1</td>
+                            <td>1 </td>
                             <td>2</td>
                             <td>3</td>
                             <td>4</td>
@@ -62,11 +73,11 @@
                                 <caption>Average Lab GW cpu for the last month</caption>
                                 <thead>
                                     <th class="resource data-center" id="CPU" scope="col">Data</th>
-                                    <th class="data-center" id="RTP" scope="col">RTP</th>
-                                    <th class="data-center" id="SJC" scope="col">SJC</th>
-                                    <th class="data-center" id="LON" scope="col">LON</th>
-                                    <th class="data-center" id="SNG" scope="col">SNG</th>
-                                    <th class="data-center" id="SYD" scope="col">SYD</th>
+                                    <th class="data-center" id="RTPMEM" scope="col">RTP</th>
+                                    <th class="data-center" id="SJCMEM" scope="col">SJC</th>
+                                    <th class="data-center" id="LONMEM" scope="col">LON</th>
+                                    <th class="data-center" id="SNGMEM" scope="col">SNG</th>
+                                    <th class="data-center" id="SYDMEM" scope="col">SYD</th>
                                 </thead>
                                 <tbody>
                                     <tr>
