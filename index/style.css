@@ -199,12 +199,16 @@ p{
 }
 
 .image-popup img {
-    width: 1000px; /* Set a fixed width */
-    height: 650px; /* Set a fixed height */
-    object-fit: cover; /* Ensure the image is resized to fit the specified dimensions */
+    width: 1450px; /* Set a fixed width */
+    height: 750px; /* Set a fixed height */
+     /* Ensure the image is resized to fit the specified dimensions */
 }
 
 /* Show the popup on hover */
 .hover-element:hover .image-popup {
     display: block;
+}
+
+#RTPCPU{
+    color: red;
 }
