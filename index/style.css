@@ -192,10 +192,14 @@ p{
     left: 50%;
     transform: translateX(-50%);
     z-index: 1000;
-    background-color: white;
-    border: 1px solid #ccc;
+    background-image: url("back.jpg"); /* Same background image as body */
+    background-repeat: no-repeat;
+    background-size: cover; /* Cover the entire popup */
+    background-position: center; /* Center the background image */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Semi-transparent border */
     padding: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Slightly more prominent shadow */
+    border-radius: 5px; /* Optional: rounded corners for a softer look */
 }
 
 .image-popup img {
@@ -204,11 +208,31 @@ p{
      /* Ensure the image is resized to fit the specified dimensions */
 }
 
+.popup-description {
+    margin-top: 10px; /* Adds some space between the image and the description */
+    font-size: 14px; /* Adjust as needed */
+    color: white; /* Adjust as needed */
+}
+
 /* Show the popup on hover */
 .hover-element:hover .image-popup {
     display: block;
 }
 
-#RTPCPU{
+#general{
+    text-decoration: underline;
+}
+#red{
     color: red;
+    text-decoration: underline;
+}
+
+#yellow{
+    color: yellow;
+    text-decoration: underline;
+}
+
+#green{
+    color: green;
+    text-decoration: underline;
 }
