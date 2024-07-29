@@ -104,7 +104,7 @@
 #content > div {
     width: 100%;
     max-width: 1000px;
-    box-sizing: border-box; /* Ensure padding and borders are included in the width calculation */
+    box-sizing: border-box; 
 }
 
 table{
@@ -188,7 +188,7 @@ p{
 .image-popup {
     display: none; /* Hidden by default */
     position: absolute;
-    top: 100%; /* Position below the hover element */
+    top: 100%; 
     left: 50%;
     transform: translateX(-50%);
     z-index: 1000;
@@ -196,22 +196,22 @@ p{
     background-repeat: no-repeat;
     background-size: cover; /* Cover the entire popup */
     background-position: center; /* Center the background image */
-    border: 1px solid rgba(255, 255, 255, 0.5); /* Semi-transparent border */
+    border: 1px solid rgba(255, 255, 255, 0.5); 
     padding: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Slightly more prominent shadow */
-    border-radius: 5px; /* Optional: rounded corners for a softer look */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px; 
 }
 
 .image-popup img {
-    width: 1450px; /* Set a fixed width */
-    height: 750px; /* Set a fixed height */
-     /* Ensure the image is resized to fit the specified dimensions */
+    width: 1350px; 
+    height: 650px;
+    
 }
 
 .popup-description {
-    margin-top: 10px; /* Adds some space between the image and the description */
-    font-size: 14px; /* Adjust as needed */
-    color: white; /* Adjust as needed */
+    margin-top: 10px; 
+    font-size: 14px; 
+    color: white; 
 }
 
 /* Show the popup on hover */
@@ -219,6 +219,7 @@ p{
     display: block;
 }
 
+/* style for content with images*/
 #general{
     text-decoration: underline;
 }
@@ -228,7 +229,7 @@ p{
 }
 
 #yellow{
-    color: yellow;
+    color: rgb(255, 191, 0, 1);
     text-decoration: underline;
 }
 
