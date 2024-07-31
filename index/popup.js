@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const imagePopup = this.querySelector('.image-popup');
             imagePopup.style.display = 'none';
         });
+        
     });
 
     // Optional: Close popup if user clicks anywhere outside the popup
@@ -21,5 +22,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 imagePopup.style.display = 'none';
             }
         });
+        
     });
 });
